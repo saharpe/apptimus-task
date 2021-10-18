@@ -68,7 +68,7 @@ img {
   border: none;
   color: white;
   margin: 0.3rem;
-  
+
 }
 
 .submit {
@@ -93,4 +93,11 @@ img {
 
 .clear:hover {
   background-color: #FF5252;
+}
+
+.sig {
+  margin: auto;
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 9px;
 }
