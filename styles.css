@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+h2 {
+  margin: auto;
+  margin-bottom: 1.4rem;
+}
+
+span {
+  font-size: 15px;
+}
+
+img {
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 60rem;
+  background-color: #e7e7e7;
+  padding: 1.2rem;
+  border-radius: 0.55rem;
+  box-shadow: 0 4px 8px #1d1d1d26;
+  margin-bottom: 1.8rem;
+}
+
+.fields .input-box input {
+  height: 2.2rem;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  padding: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.actions {
+  width: 100%;
+  margin: auto;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  padding: 0.65rem;
+  font-size: 17px;
+  border-radius: 5px;
+  font-weight: lighter;
+  border: none;
+  color: white;
+  margin: 0.3rem;
+  
+}
+
+.submit {
+  background-color: #424242ce;
+}
+
+.submit:hover {
+  background-color: #424242;
+}
+
+.save {
+  background-color: #4caf4fe5;
+}
+
+.save:hover {
+  background-color: #4CAF50;
+}
+
+.clear {
+  background-color: #ff5252cc;
+}
+
+.clear:hover {
+  background-color: #FF5252;
+}

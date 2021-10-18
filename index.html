@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Apptimus Task </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="renderSavedBanners()">
+    <div class="main">
+        <div class="container">
+            <h2> New Banner Form </h2>
+            <form name="banner-form"
+                onsubmit="createNewBanner('banners-list',document.getElementById('banner-link').value,document.getElementById('banner-url').value); return false">
+                <div class="fields">
+                    <div class="input-box">
+                        <span> Image URL </span>
+                        <input type="text" id="banner-url" required>
+                    </div>
+                    <div class="input-box">
+                        <span> Redirect Link </span>
+                        <input type="text" id="banner-link" required>
+                    </div>
+                </div>
+                <div class="actions">
+                    <input class="button submit" type="submit" value="submit">
+                    <button class="button save" type="button" onclick="saveBannersOnLocalStorage()">save</button>
+                    <button class="button clear" type="button" onclick="clearBannersFromLocalStorage()">clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="banners-list">
+            <h2> Banners List </h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
